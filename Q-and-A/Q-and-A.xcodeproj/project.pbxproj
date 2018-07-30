@@ -12,6 +12,8 @@
 		1328D04A210FB60400AA5E20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1328D048210FB60400AA5E20 /* Main.storyboard */; };
 		1328D04C210FB60500AA5E20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1328D04B210FB60500AA5E20 /* Assets.xcassets */; };
 		1328D04F210FB60500AA5E20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1328D04D210FB60500AA5E20 /* LaunchScreen.storyboard */; };
+		1328D059210FB66D00AA5E20 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1328D058210FB66D00AA5E20 /* Question.swift */; };
+		1328D05B210FB7F700AA5E20 /* QuestionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1328D05A210FB7F700AA5E20 /* QuestionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		1328D04B210FB60500AA5E20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1328D04E210FB60500AA5E20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1328D050210FB60500AA5E20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1328D058210FB66D00AA5E20 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		1328D05A210FB7F700AA5E20 /* QuestionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		1328D043210FB60400AA5E20 /* Q-and-A */ = {
 			isa = PBXGroup;
 			children = (
+				1328D057210FB65D00AA5E20 /* Model Controllers */,
+				1328D056210FB65600AA5E20 /* Models */,
 				1328D044210FB60400AA5E20 /* AppDelegate.swift */,
 				1328D046210FB60400AA5E20 /* ViewController.swift */,
 				1328D048210FB60400AA5E20 /* Main.storyboard */,
@@ -62,6 +68,22 @@
 				1328D050210FB60500AA5E20 /* Info.plist */,
 			);
 			path = "Q-and-A";
+			sourceTree = "<group>";
+		};
+		1328D056210FB65600AA5E20 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1328D058210FB66D00AA5E20 /* Question.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1328D057210FB65D00AA5E20 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1328D05A210FB7F700AA5E20 /* QuestionController.swift */,
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +157,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1328D059210FB66D00AA5E20 /* Question.swift in Sources */,
 				1328D047210FB60400AA5E20 /* ViewController.swift in Sources */,
 				1328D045210FB60400AA5E20 /* AppDelegate.swift in Sources */,
+				1328D05B210FB7F700AA5E20 /* QuestionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
