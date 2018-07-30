@@ -13,8 +13,17 @@ class QuestionController {
         questions.append(Question(question: question, asker: asker, answer: answerer, answerer: answerer))
     }
     
-    func update(question: Question) {
-        
+    func update(question: Question, answer: String?, answerer: String?) {
+        if let index = questions.index(of: question) {
+            var scratch = question
+            scratch.question = question.question
+            scratch.asker = question.asker
+            scratch.answer = answer
+            scratch.answerer = answerer
+            
+            questions.remove(at: index)
+            questions.insert(scratch, at: index)
+        }
     }
     
     func delete(question: Question) {
