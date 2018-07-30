@@ -13,5 +13,14 @@ class QuestionController {
         questions.append(Question(question: question, asker: asker, answer: answerer, answerer: answerer))
     }
     
-    var questions: [Question] = []
+    func update(question: Question) {
+        
+    }
+    
+    func delete(question: Question) {
+        guard let index = questions.index(of: question) else { return }
+        questions.remove(at: index)
+    }
+    
+    private(set) var questions: [Question] = []
 }

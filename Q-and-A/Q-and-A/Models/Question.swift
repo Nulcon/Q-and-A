@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Question {
+struct Question: Equatable {
     init(question: String, asker: String, answer: String?, answerer: String?) {
         self.question = question
         self.asker = asker
